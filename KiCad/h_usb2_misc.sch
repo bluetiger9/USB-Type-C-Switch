@@ -1,0 +1,328 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 5 5
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+Text HLabel 2850 1850 0    50   Input ~ 0
+D_1_P
+Text HLabel 2850 1750 0    50   Input ~ 0
+D_1_N
+Text HLabel 2850 2050 0    50   Input ~ 0
+D_2_P
+Text HLabel 2850 1950 0    50   Input ~ 0
+D_2_N
+Text HLabel 6800 2050 2    50   Input ~ 0
+D_P
+Text HLabel 6800 1950 2    50   Input ~ 0
+D_N
+Text HLabel 2850 4800 0    50   Input ~ 0
+CC1_1
+Text HLabel 2850 4900 0    50   Input ~ 0
+CC2_1
+Text HLabel 2900 5650 0    50   Input ~ 0
+CC1_2
+Text HLabel 2900 5750 0    50   Input ~ 0
+CC2_2
+Text HLabel 6650 4850 2    50   Input ~ 0
+CC1
+Text HLabel 6650 4950 2    50   Input ~ 0
+CC2
+Text HLabel 2850 3150 0    50   Input ~ 0
+SBU1_1
+Text HLabel 2850 3250 0    50   Input ~ 0
+SBU2_1
+Text HLabel 2850 3550 0    50   Input ~ 0
+SBU1_2
+Text HLabel 2850 3650 0    50   Input ~ 0
+SBU2_2
+Text HLabel 6700 3350 2    50   Input ~ 0
+SBU1
+Text HLabel 6700 3450 2    50   Input ~ 0
+SBU2
+Text HLabel 2850 2600 0    50   Input ~ 0
+OE_N_USB2
+Text HLabel 2850 2800 0    50   Input ~ 0
+SEL
+$Comp
+L NL3S588:NL3S588 U7
+U 1 1 60E2B0C8
+P 4650 3000
+F 0 "U7" H 4700 3115 50  0000 C CNN
+F 1 "NL3S588" H 4700 3024 50  0000 C CNN
+F 2 "custom:NL3S588MUTBG" H 4650 3000 50  0001 C CNN
+F 3 "" H 4650 3000 50  0001 C CNN
+	1    4650 3000
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2850 3150 4350 3150
+Wire Wire Line
+	4350 3350 3450 3350
+Wire Wire Line
+	3450 3350 3450 3550
+Wire Wire Line
+	3450 3550 2850 3550
+Wire Wire Line
+	3550 3650 3550 3450
+Wire Wire Line
+	3550 3450 4350 3450
+Wire Wire Line
+	2850 3650 3550 3650
+Wire Wire Line
+	2850 3250 4350 3250
+Wire Wire Line
+	5050 3350 6700 3350
+Wire Wire Line
+	5050 3450 6700 3450
+$Comp
+L DG2788ADN-T1-GE4:DG2788ADN-T1-GE4 S1
+U 1 1 60E2EE98
+P 4100 5250
+F 0 "S1" H 5050 5700 50  0000 L CNN
+F 1 "DG2788ADN-T1-GE4" H 4900 4350 50  0000 L CNN
+F 2 "custom:QFN40P180X260X60-16N-D" H 5050 5750 50  0001 L CNN
+F 3 "http://www.vishay.com/docs/79391/dg2788a.pdf" H 5050 5650 50  0001 L CNN
+F 4 "VISHAY - DG2788ADN-T1-GE4 - ANALOGUE SWITCH, 2CH, DPDT, MINI QFN-16" H 5050 5550 50  0001 L CNN "Description"
+F 5 "0.6" H 5050 5450 50  0001 L CNN "Height"
+F 6 "Vishay" H 5050 5350 50  0001 L CNN "Manufacturer_Name"
+F 7 "DG2788ADN-T1-GE4" H 5050 5250 50  0001 L CNN "Manufacturer_Part_Number"
+F 8 "78-DG2788ADN-T1-GE4" H 5050 5150 50  0001 L CNN "Mouser Part Number"
+F 9 "https://www.mouser.co.uk/ProductDetail/Vishay-Siliconix/DG2788ADN-T1-GE4?qs=OycAS1CGnlgHGjbW773yQA%3D%3D" H 5050 5050 50  0001 L CNN "Mouser Price/Stock"
+F 10 "DG2788ADN-T1-GE4" H 5050 4950 50  0001 L CNN "Arrow Part Number"
+F 11 "https://www.arrow.com/en/products/dg2788adn-t1-ge4/vishay" H 5050 4850 50  0001 L CNN "Arrow Price/Stock"
+	1    4100 5250
+	1    0    0    -1  
+$EndComp
+NoConn ~ 5200 5550
+NoConn ~ 4500 6250
+NoConn ~ 4100 5250
+NoConn ~ 4800 4550
+Wire Wire Line
+	3250 4800 2850 4800
+Wire Wire Line
+	2900 5650 3350 5650
+Wire Wire Line
+	2900 5750 3350 5750
+Wire Wire Line
+	4100 5550 4000 5550
+Text HLabel 2900 6550 0    50   Input ~ 0
+OE_CC_1
+Wire Wire Line
+	2900 6550 3550 6550
+Text HLabel 2900 6650 0    50   Input ~ 0
+OE_CC_2
+$Comp
+L power:+5V #PWR022
+U 1 1 60E3F36D
+P 5650 5050
+F 0 "#PWR022" H 5650 4900 50  0001 C CNN
+F 1 "+5V" H 5750 5200 50  0000 C CNN
+F 2 "" H 5650 5050 50  0001 C CNN
+F 3 "" H 5650 5050 50  0001 C CNN
+	1    5650 5050
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5200 5450 5650 5450
+Wire Wire Line
+	5650 5450 5650 5050
+$Comp
+L power:GND #PWR03
+U 1 1 60E40DCF
+P 3700 5800
+F 0 "#PWR03" H 3700 5550 50  0001 C CNN
+F 1 "GND" H 3705 5627 50  0000 C CNN
+F 2 "" H 3700 5800 50  0001 C CNN
+F 3 "" H 3700 5800 50  0001 C CNN
+	1    3700 5800
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4100 5350 3700 5350
+Wire Wire Line
+	3700 5350 3700 5800
+Text HLabel 2850 2700 0    50   Input ~ 0
+OE_N_SBU
+Wire Wire Line
+	2850 2700 3700 2700
+Wire Wire Line
+	3700 2700 3700 3600
+Wire Wire Line
+	3700 3600 4350 3600
+Wire Wire Line
+	4350 3700 4000 3700
+Wire Wire Line
+	4000 3700 4000 2800
+Wire Wire Line
+	2850 2800 4000 2800
+$Comp
+L power:GND #PWR021
+U 1 1 60E4A58F
+P 5250 3750
+F 0 "#PWR021" H 5250 3500 50  0001 C CNN
+F 1 "GND" H 5255 3577 50  0000 C CNN
+F 2 "" H 5250 3750 50  0001 C CNN
+F 3 "" H 5250 3750 50  0001 C CNN
+	1    5250 3750
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR019
+U 1 1 60E4BFD5
+P 5250 2350
+F 0 "#PWR019" H 5250 2100 50  0001 C CNN
+F 1 "GND" H 5255 2177 50  0000 C CNN
+F 2 "" H 5250 2350 50  0001 C CNN
+F 3 "" H 5250 2350 50  0001 C CNN
+	1    5250 2350
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5250 2300 5250 2350
+Wire Wire Line
+	5050 2300 5250 2300
+Wire Wire Line
+	5050 3700 5250 3700
+Wire Wire Line
+	5250 3700 5250 3750
+$Comp
+L power:+3.3V #PWR020
+U 1 1 60E52E40
+P 5250 3100
+F 0 "#PWR020" H 5250 2950 50  0001 C CNN
+F 1 "+3.3V" H 5265 3273 50  0000 C CNN
+F 2 "" H 5250 3100 50  0001 C CNN
+F 3 "" H 5250 3100 50  0001 C CNN
+	1    5250 3100
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+3.3V #PWR018
+U 1 1 60E5394B
+P 5250 1700
+F 0 "#PWR018" H 5250 1550 50  0001 C CNN
+F 1 "+3.3V" H 5265 1873 50  0000 C CNN
+F 2 "" H 5250 1700 50  0001 C CNN
+F 3 "" H 5250 1700 50  0001 C CNN
+	1    5250 1700
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5050 1750 5250 1750
+Wire Wire Line
+	5250 1750 5250 1700
+Wire Wire Line
+	5050 3150 5250 3150
+Wire Wire Line
+	5250 3150 5250 3100
+$Comp
+L NL3S588:NL3S588 U3
+U 1 1 60E29C02
+P 4650 1600
+F 0 "U3" H 4700 1715 50  0000 C CNN
+F 1 "NL3S588" H 4700 1624 50  0000 C CNN
+F 2 "custom:NL3S588MUTBG" H 4650 1600 50  0001 C CNN
+F 3 "" H 4650 1600 50  0001 C CNN
+	1    4650 1600
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4350 2300 4000 2300
+Wire Wire Line
+	4000 2300 4000 2800
+Connection ~ 4000 2800
+Wire Wire Line
+	2850 1950 4350 1950
+Wire Wire Line
+	3700 2200 3700 2600
+Wire Wire Line
+	3700 2600 2850 2600
+Wire Wire Line
+	3700 2200 4350 2200
+Wire Wire Line
+	6800 1950 5050 1950
+Wire Wire Line
+	5050 2050 6800 2050
+Wire Wire Line
+	2850 2050 4350 2050
+Wire Wire Line
+	4350 1750 2850 1750
+Wire Wire Line
+	2850 1850 4350 1850
+Wire Wire Line
+	5400 4850 6250 4850
+Wire Wire Line
+	5200 5250 5400 5250
+Wire Wire Line
+	5400 5250 5400 4850
+Wire Wire Line
+	6050 4950 6650 4950
+Wire Wire Line
+	4800 6250 4800 6350
+Wire Wire Line
+	4800 6350 6050 6350
+Wire Wire Line
+	6050 4950 6050 6350
+Wire Wire Line
+	4600 6650 4600 6250
+Wire Wire Line
+	2900 6650 4600 6650
+Wire Wire Line
+	4700 4550 4700 4350
+Wire Wire Line
+	3550 4350 3550 6550
+Wire Wire Line
+	3550 4350 4700 4350
+Wire Wire Line
+	3350 5650 3350 5450
+Wire Wire Line
+	3350 5450 4100 5450
+Wire Wire Line
+	4700 6250 4700 6500
+Wire Wire Line
+	4700 6500 3350 6500
+Wire Wire Line
+	3350 5750 3350 6500
+Wire Wire Line
+	3250 4200 5300 4200
+Wire Wire Line
+	5300 4200 5300 5350
+Wire Wire Line
+	5300 5350 5200 5350
+Wire Wire Line
+	3250 4200 3250 4800
+Wire Wire Line
+	4600 4550 4600 4250
+Wire Wire Line
+	4600 4250 3400 4250
+Wire Wire Line
+	3400 4250 3400 4900
+Wire Wire Line
+	2850 4900 3400 4900
+Wire Wire Line
+	4000 5550 4000 6750
+Wire Wire Line
+	4000 6750 6250 6750
+Wire Wire Line
+	6250 6750 6250 4850
+Connection ~ 6250 4850
+Wire Wire Line
+	6250 4850 6650 4850
+Wire Wire Line
+	4500 4550 4500 4400
+Wire Wire Line
+	4500 4400 6050 4400
+Wire Wire Line
+	6050 4400 6050 4950
+Connection ~ 6050 4950
+$EndSCHEMATC
