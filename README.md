@@ -1,4 +1,6 @@
-# USB-Type-C-Switch
+# USB 3.x Type-C Switch
+
+![KiCAD Render](https://github.com/bluetiger9/USB-Type-C-Switch/raw/main/render.png)
 
 Design idea:
 https://www.element14.com/community/message/298495/l/usb-3x-type-c-switch-kvm-type-design-review#298495
@@ -14,4 +16,3 @@ The device will have the following features:
 - switching of the Configuration (CC) and Sideband use (SBU) channels
 - USB Power Delivery pass-through up to the full power range 20V @ 5A
 - reasonable cost
-
