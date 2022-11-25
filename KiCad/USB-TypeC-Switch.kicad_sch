@@ -2195,11 +2195,11 @@
       (effects (font (size 1.27 1.27)) (justify right))
       (uuid cdeded93-1fe9-4f41-8a59-f7a912611b5e)
     )
-    (pin "D_P_uC" output (at 104.14 172.72 180)
+    (pin "D_uC_P" output (at 104.14 172.72 180)
       (effects (font (size 1.27 1.27)) (justify left))
       (uuid 53802c0b-e270-4f09-8c41-fed6f44515ed)
     )
-    (pin "D_N_uC" output (at 104.14 175.26 180)
+    (pin "D_uC_N" output (at 104.14 175.26 180)
       (effects (font (size 1.27 1.27)) (justify left))
       (uuid 6f150dcb-3570-44e1-9b52-ebdee1e316e6)
     )
@@ -2271,11 +2271,17 @@
     (path "/00000000-0000-0000-0000-00006060e5e3/00000000-0000-0000-0000-000060623bdf"
       (reference "#PWR05") (unit 1) (value "GND") (footprint "")
     )
+    (path "/00000000-0000-0000-0000-00006086b3f3/35dca088-b88f-4e6d-bf2f-61d34196ddae"
+      (reference "#PWR06") (unit 1) (value "GND") (footprint "")
+    )
     (path "/00000000-0000-0000-0000-0000610e53f5/00000000-0000-0000-0000-00006191a7de"
       (reference "#PWR07") (unit 1) (value "GND") (footprint "")
     )
     (path "/00000000-0000-0000-0000-0000617c9d19"
       (reference "#PWR08") (unit 1) (value "GND") (footprint "")
+    )
+    (path "/00000000-0000-0000-0000-00006086b3f3/4cfa5d23-28d3-4496-88f9-e8f971816ab0"
+      (reference "#PWR09") (unit 1) (value "GND") (footprint "")
     )
     (path "/00000000-0000-0000-0000-00006086b3f3/00000000-0000-0000-0000-000060e815b8"
       (reference "#PWR010") (unit 1) (value "GND") (footprint "")
@@ -2321,6 +2327,9 @@
     )
     (path "/00000000-0000-0000-0000-00006086b3f3/00000000-0000-0000-0000-000060f840e1"
       (reference "#PWR024") (unit 1) (value "+3.3V") (footprint "")
+    )
+    (path "/00000000-0000-0000-0000-00006086b3f3/d93da42e-33d0-41f7-80b6-260bceb6f799"
+      (reference "#PWR025") (unit 1) (value "GND") (footprint "")
     )
     (path "/00000000-0000-0000-0000-00006086b3f3/00000000-0000-0000-0000-00006156ae36"
       (reference "#PWR028") (unit 1) (value "GND") (footprint "")
@@ -2582,6 +2591,15 @@
     )
     (path "/00000000-0000-0000-0000-00006078c669/d986c115-0c2d-43a0-9212-3e42680b9c3e"
       (reference "R28") (unit 1) (value "220k") (footprint "Resistor_SMD:R_0402_1005Metric")
+    )
+    (path "/00000000-0000-0000-0000-00006086b3f3/7e95abd5-3dc5-47c3-92eb-e332a06585c6"
+      (reference "R29") (unit 1) (value "220k") (footprint "Resistor_SMD:R_0603_1608Metric")
+    )
+    (path "/00000000-0000-0000-0000-00006086b3f3/7c63d664-6d23-4b23-853b-a56c3ba17cb5"
+      (reference "R30") (unit 1) (value "220k") (footprint "Resistor_SMD:R_0603_1608Metric")
+    )
+    (path "/00000000-0000-0000-0000-00006086b3f3/248654c3-6fc0-4657-98b2-9186fcce2b8f"
+      (reference "R31") (unit 1) (value "220k") (footprint "Resistor_SMD:R_0603_1608Metric")
     )
     (path "/00000000-0000-0000-0000-00006078c669/00000000-0000-0000-0000-000060e2ee98"
       (reference "S1") (unit 1) (value "DG2788ADN-T1-GE4") (footprint "custom:QFN40P180X260X60-16N-D")
