@@ -2215,15 +2215,15 @@
       (effects (font (size 1.27 1.27)) (justify left))
       (uuid e2e85313-a19f-4105-8e69-81e7bf5688c2)
     )
-    (pin "PU_CC" input (at 104.14 180.34 180)
+    (pin "PU_CC" output (at 104.14 180.34 180)
       (effects (font (size 1.27 1.27)) (justify left))
       (uuid 857b04d9-851d-44c4-9a69-8b2c69844f8f)
     )
-    (pin "PU_CC_2" input (at 104.14 185.42 180)
+    (pin "PU_CC_2" output (at 104.14 185.42 180)
       (effects (font (size 1.27 1.27)) (justify left))
       (uuid 384dfeaf-216c-4bd7-8b76-2328cfb0d611)
     )
-    (pin "PU_CC_1" input (at 104.14 182.88 180)
+    (pin "PU_CC_1" output (at 104.14 182.88 180)
       (effects (font (size 1.27 1.27)) (justify left))
       (uuid 3d78f561-384f-4548-bbd9-5cf448bc5bc8)
     )
@@ -2443,13 +2443,13 @@
       (reference "D6") (unit 1) (value "LED_Small") (footprint "LED_SMD:LED_0805_2012Metric")
     )
     (path "/00000000-0000-0000-0000-0000610e53f5/6d21c2a1-b663-4221-aad5-1393d1f17314"
-      (reference "D7") (unit 1) (value "3.3V") (footprint "Diode_SMD:D_SOD-523")
+      (reference "D7") (unit 1) (value "3.6V") (footprint "Diode_SMD:D_SOD-523")
     )
     (path "/00000000-0000-0000-0000-0000610e53f5/f74d4f11-39e8-4a3d-b4b8-25e026f99cda"
-      (reference "D8") (unit 1) (value "3.3V") (footprint "Diode_SMD:D_SOD-523")
+      (reference "D8") (unit 1) (value "3.6V") (footprint "Diode_SMD:D_SOD-523")
     )
     (path "/00000000-0000-0000-0000-0000610e53f5/86148fb1-c94e-4cc9-bf8c-b8687e7fd903"
-      (reference "D9") (unit 1) (value "3.3V") (footprint "Diode_SMD:D_SOD-523")
+      (reference "D9") (unit 1) (value "3.6V") (footprint "Diode_SMD:D_SOD-523")
     )
     (path "/00000000-0000-0000-0000-00006086b3f3/00000000-0000-0000-0000-000060eeb93a"
       (reference "F1") (unit 1) (value "5A") (footprint "Fuse:Fuse_0603_1608Metric")
@@ -2491,37 +2491,37 @@
       (reference "NT1") (unit 1) (value "pwr_erc_ignore") (footprint "NetTie:NetTie-2_SMD_Pad2.0mm")
     )
     (path "/00000000-0000-0000-0000-00006078c669/6dfdf56f-03fa-46a7-b952-05d4e94d5585"
-      (reference "Q1") (unit 1) (value "2N7002") (footprint "Package_DFN_QFN:Diodes_DFN1006-3")
+      (reference "Q1") (unit 1) (value "AP1606") (footprint "Package_DFN_QFN:Diodes_DFN1006-3")
     )
     (path "/00000000-0000-0000-0000-00006078c669/e63e441c-d563-4a4b-8680-4e2600adb301"
-      (reference "Q2") (unit 1) (value "2N7002") (footprint "Package_DFN_QFN:Diodes_DFN1006-3")
+      (reference "Q2") (unit 1) (value "AP1606") (footprint "Package_DFN_QFN:Diodes_DFN1006-3")
     )
     (path "/00000000-0000-0000-0000-00006078c669/795ef6a8-c75e-4cca-a90b-0924912a634e"
-      (reference "Q3") (unit 1) (value "2N7002") (footprint "Package_DFN_QFN:Diodes_DFN1006-3")
+      (reference "Q3") (unit 1) (value "AP1606") (footprint "Package_DFN_QFN:Diodes_DFN1006-3")
     )
     (path "/00000000-0000-0000-0000-00006078c669/cce6deed-ac7e-4607-b866-bfbff4da103b"
-      (reference "Q4") (unit 1) (value "2N7002") (footprint "Package_DFN_QFN:Diodes_DFN1006-3")
+      (reference "Q4") (unit 1) (value "AP1606") (footprint "Package_DFN_QFN:Diodes_DFN1006-3")
     )
     (path "/00000000-0000-0000-0000-00006078c669/20ce3f31-9924-4c6b-ab6b-33294af49b8b"
-      (reference "Q5") (unit 1) (value "2N7002") (footprint "Package_DFN_QFN:Diodes_DFN1006-3")
+      (reference "Q5") (unit 1) (value "AP1606") (footprint "Package_DFN_QFN:Diodes_DFN1006-3")
     )
     (path "/00000000-0000-0000-0000-00006078c669/e3c91051-0b41-4302-b163-038ad51c80b2"
-      (reference "Q6") (unit 1) (value "2N7002") (footprint "Package_DFN_QFN:Diodes_DFN1006-3")
+      (reference "Q6") (unit 1) (value "AP1606") (footprint "Package_DFN_QFN:Diodes_DFN1006-3")
     )
     (path "/00000000-0000-0000-0000-0000610e53f5/00000000-0000-0000-0000-000060142a37"
-      (reference "R1") (unit 1) (value "220") (footprint "Resistor_SMD:R_0603_1608Metric")
+      (reference "R1") (unit 1) (value "470") (footprint "Resistor_SMD:R_0603_1608Metric")
     )
     (path "/00000000-0000-0000-0000-0000610e53f5/00000000-0000-0000-0000-000060140919"
-      (reference "R2") (unit 1) (value "220") (footprint "Resistor_SMD:R_0603_1608Metric")
+      (reference "R2") (unit 1) (value "470") (footprint "Resistor_SMD:R_0603_1608Metric")
     )
     (path "/00000000-0000-0000-0000-0000610e53f5/00000000-0000-0000-0000-0000616a374f"
-      (reference "R3") (unit 1) (value "220") (footprint "Resistor_SMD:R_0603_1608Metric")
+      (reference "R3") (unit 1) (value "470") (footprint "Resistor_SMD:R_0603_1608Metric")
     )
     (path "/00000000-0000-0000-0000-00006086b3f3/00000000-0000-0000-0000-0000600bbec3"
-      (reference "R4") (unit 1) (value "9k") (footprint "Resistor_SMD:R_0603_1608Metric")
+      (reference "R4") (unit 1) (value "10k") (footprint "Resistor_SMD:R_0603_1608Metric")
     )
     (path "/00000000-0000-0000-0000-00006086b3f3/00000000-0000-0000-0000-0000600c3d30"
-      (reference "R5") (unit 1) (value "9k") (footprint "Resistor_SMD:R_0603_1608Metric")
+      (reference "R5") (unit 1) (value "10k") (footprint "Resistor_SMD:R_0603_1608Metric")
     )
     (path "/00000000-0000-0000-0000-00006060e5e3/00000000-0000-0000-0000-00006012d6cb"
       (reference "R6") (unit 1) (value "10k") (footprint "Resistor_SMD:R_0603_1608Metric")
@@ -2545,22 +2545,22 @@
       (reference "R12") (unit 1) (value "5.1k") (footprint "Resistor_SMD:R_0402_1005Metric")
     )
     (path "/00000000-0000-0000-0000-00006086b3f3/00000000-0000-0000-0000-00006156ae26"
-      (reference "R13") (unit 1) (value "9k") (footprint "Resistor_SMD:R_0603_1608Metric")
+      (reference "R13") (unit 1) (value "47k") (footprint "Resistor_SMD:R_0603_1608Metric")
     )
     (path "/00000000-0000-0000-0000-00006086b3f3/00000000-0000-0000-0000-00006156ae2c"
-      (reference "R14") (unit 1) (value "1k") (footprint "Resistor_SMD:R_0603_1608Metric")
+      (reference "R14") (unit 1) (value "5.6k") (footprint "Resistor_SMD:R_0603_1608Metric")
     )
     (path "/00000000-0000-0000-0000-00006086b3f3/00000000-0000-0000-0000-0000615833ba"
-      (reference "R15") (unit 1) (value "9k") (footprint "Resistor_SMD:R_0603_1608Metric")
+      (reference "R15") (unit 1) (value "47k") (footprint "Resistor_SMD:R_0603_1608Metric")
     )
     (path "/00000000-0000-0000-0000-00006086b3f3/00000000-0000-0000-0000-0000615833c0"
-      (reference "R16") (unit 1) (value "1k") (footprint "Resistor_SMD:R_0603_1608Metric")
+      (reference "R16") (unit 1) (value "5.6k") (footprint "Resistor_SMD:R_0603_1608Metric")
     )
     (path "/00000000-0000-0000-0000-00006086b3f3/00000000-0000-0000-0000-00006158fd1f"
-      (reference "R17") (unit 1) (value "9k") (footprint "Resistor_SMD:R_0603_1608Metric")
+      (reference "R17") (unit 1) (value "47k") (footprint "Resistor_SMD:R_0603_1608Metric")
     )
     (path "/00000000-0000-0000-0000-00006086b3f3/00000000-0000-0000-0000-00006158fd25"
-      (reference "R18") (unit 1) (value "1k") (footprint "Resistor_SMD:R_0603_1608Metric")
+      (reference "R18") (unit 1) (value "5.6k") (footprint "Resistor_SMD:R_0603_1608Metric")
     )
     (path "/00000000-0000-0000-0000-0000610e53f5/00000000-0000-0000-0000-000061664e03"
       (reference "R19") (unit 1) (value "1k") (footprint "Resistor_SMD:R_0603_1608Metric")
