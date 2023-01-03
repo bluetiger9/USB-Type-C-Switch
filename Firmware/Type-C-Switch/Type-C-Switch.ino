@@ -150,7 +150,7 @@ bool detectVoltage(int snsPin) {
 }
 
 void initPins() {
-  pinMode(PIN_BUTTON, INPUT);
+  pinMode(PIN_BUTTON, INPUT_PULLDOWN);
   pinMode(PIN_VBUS_SNS_OUT, INPUT);
   pinMode(PIN_VBUS_SNS_IN1, INPUT);
   pinMode(PIN_VBUS_SNS_IN2, INPUT);
