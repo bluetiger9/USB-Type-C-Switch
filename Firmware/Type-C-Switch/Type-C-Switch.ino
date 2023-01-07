@@ -34,6 +34,11 @@ const uint8_t PIN_SEL_USB2_SBU = 27;
 const uint8_t PIN_USB_N_uC = 24;
 const uint8_t PIN_USB_P_uC = 25;
 
+// Power Delivery Trigger circuits
+const uint8_t PIN_CC_PD_TRG = 11;
+const uint8_t PIN_CC_1_PD_TRG= 8;
+const uint8_t PIN_CC_2_PD_TRG = 13;
+
 /* Pin Values */
 const int8_t OFF = LOW;
 const int8_t ON = HIGH;
@@ -74,6 +79,10 @@ typedef struct State {
   int8_t led_in1;
   int8_t led_in2;
 
+  int8_t cc_pd_trg;
+  int8_t cc_pd_trg_1;
+  int8_t cc_pd_trg_2;
+
   bool oe_before_select;
 };
 
@@ -91,6 +100,9 @@ const State STATE_OFF = {
   led_out : ON,
   led_in1 : OFF,
   led_in2 : OFF,
+  cc_pd_trg : ON,
+  cc_pd_trg_1 : ON,
+  cc_pd_trg_2 : ON,
   oe_before_select: true
 };
 
@@ -108,6 +120,9 @@ const State STATE_ON_IN1 = {
   led_out : ON,
   led_in1 : ON,
   led_in2 : OFF,
+  cc_pd_trg : OFF,
+  cc_pd_trg_1 : OFF,
+  cc_pd_trg_2 : ON,
   oe_before_select: false
 };
 
@@ -125,6 +140,9 @@ const State STATE_ON_IN2 = {
   led_out : ON,
   led_in1 : OFF,
   led_in2 : ON,
+  cc_pd_trg : OFF,
+  cc_pd_trg_1 : ON,
+  cc_pd_trg_2 : OFF,
   oe_before_select: false
 };
 
@@ -167,6 +185,9 @@ void initPins() {
   pinModeOut(PIN_SEL_USB3, STATE_OFF.sel_usb3);
   pinModeOut(PIN_OE_N_USB2, STATE_OFF.on_n_usb2);
   pinModeOut(PIN_SEL_USB2_SBU, STATE_OFF.sel_usb2_sbu);
+  pinModeOut(PIN_CC_PD_TRG, STATE_OFF.cc_pd_trg);
+  pinModeOut(PIN_CC_1_PD_TRG, STATE_OFF.cc_pd_trg_1);
+  pinModeOut(PIN_CC_2_PD_TRG, STATE_OFF.cc_pd_trg_2);
 }
 
 /* State handling */
@@ -179,6 +200,9 @@ void changeStateOE(State state) {
   digitalWrite(PIN_OE_PWR_2, state.oe_pwr_2);
   digitalWrite(PIN_OE_N_USB3, state.oe_n_usb3);
   digitalWrite(PIN_OE_N_USB2, state.on_n_usb2);
+  digitalWrite(PIN_CC_PD_TRG, state.cc_pd_trg);
+  digitalWrite(PIN_CC_1_PD_TRG, state.cc_pd_trg_1);
+  digitalWrite(PIN_CC_2_PD_TRG, state.cc_pd_trg_2);
 }
 
 void changeStateSEL(State state) {
