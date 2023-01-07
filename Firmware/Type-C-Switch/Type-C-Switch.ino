@@ -51,6 +51,9 @@ const int8_t UNCHANGED = -1;
 const int8_t SEL_IN1 = LOW;
 const int8_t SEL_IN2 = HIGH;
 
+const int8_t SEL_IN1_N = HIGH;
+const int8_t SEL_IN2_N = LOW;
+
 /* Voltage Sensing */
 
 /* voltage divider: 47k / 5.6k = 8.39 ~= 67 / 2^3 */
@@ -95,7 +98,7 @@ const State STATE_OFF = {
   oe_pwr_2 : OFF,
   oe_n_usb3 : OFF_N,
   on_n_usb2 : OFF_N,
-  sel_usb3 : SEL_IN1,
+  sel_usb3 : SEL_IN1_N,
   sel_usb2_sbu : SEL_IN1,
   led_out : ON,
   led_in1 : OFF,
@@ -115,7 +118,7 @@ const State STATE_ON_IN1 = {
   oe_pwr_2: OFF,
   oe_n_usb3: ON_N,
   on_n_usb2: ON_N,
-  sel_usb3: SEL_IN1,
+  sel_usb3: SEL_IN1_N,
   sel_usb2_sbu: SEL_IN1,
   led_out : ON,
   led_in1 : ON,
@@ -135,7 +138,7 @@ const State STATE_ON_IN2 = {
   oe_pwr_2: ON,
   oe_n_usb3: ON_N,
   on_n_usb2: ON_N,
-  sel_usb3: SEL_IN2,
+  sel_usb3: SEL_IN2_N,
   sel_usb2_sbu: SEL_IN2,
   led_out : ON,
   led_in1 : OFF,
