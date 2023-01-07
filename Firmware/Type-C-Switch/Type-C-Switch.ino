@@ -177,6 +177,10 @@ void initPins() {
   pinMode(PIN_VBUS_SNS_IN1, INPUT);
   pinMode(PIN_VBUS_SNS_IN2, INPUT);
 
+  // disable internal USB port
+  pinMode(PIN_USB_N_uC, INPUT);
+  pinMode(PIN_USB_P_uC, INPUT);
+
   pinModeOut(PIN_LED_OUT, STATE_OFF.led_out);
   pinModeOut(PIN_LED_IN1, STATE_OFF.led_in1);
   pinModeOut(PIN_LED_IN2, STATE_OFF.led_in2);
