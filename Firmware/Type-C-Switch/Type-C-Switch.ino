@@ -154,6 +154,10 @@ const uint16_t STATE_CHANGE_DELAY = 500;
 bool buttonReleased = true;
 const uint16_t BUTTON_CHECK_DELAY = 100;
 
+/* Auto switch ignore / delay */
+const uint16_t AUTO_SWITCH_DELAY = 5000;
+int64_t autoSwitchNotBefore = -1;
+
 /* Input / output */
 
 void pinModeOut(int pin, int initialValue) {
@@ -227,6 +231,9 @@ void changeState(const State *newState) {
 
 void changeStateSafely(const State *newState) {
   changeState(&STATE_OFF);
+
+  autoSwitchNotBefore = millis() + AUTO_SWITCH_DELAY;
+
   if (newState != &STATE_OFF) {
     delay(STATE_CHANGE_DELAY);
     changeState(newState);
@@ -259,14 +266,16 @@ void setup() {
 
 /* Loop */
 void loop() {
+  auto now = millis();
+
   // Idle and new device is pluged into IN1?
-  if (state != &STATE_ON_IN1 && detectVoltage(PIN_VBUS_SNS_IN1) && !detectVoltage(PIN_VBUS_SNS_IN2)) {
+  if (state != &STATE_ON_IN1 && detectVoltage(PIN_VBUS_SNS_IN1) && !detectVoltage(PIN_VBUS_SNS_IN2) && now >= autoSwitchNotBefore) {
     changeStateSafely(&STATE_ON_IN1);
     return;
   }
 
   // Idle and new device is pluged into IN2?
-  if (state != &STATE_ON_IN2 && detectVoltage(PIN_VBUS_SNS_IN2) && !detectVoltage(PIN_VBUS_SNS_IN1)) {
+  if (state != &STATE_ON_IN2 && detectVoltage(PIN_VBUS_SNS_IN2) && !detectVoltage(PIN_VBUS_SNS_IN1) && now >= autoSwitchNotBefore) {
     changeStateSafely(&STATE_ON_IN2);
     return;
   }
